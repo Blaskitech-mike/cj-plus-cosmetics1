@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJ Plus Cosmetics & Make-Over | Premier Skincare & Beauty Awka</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        royalPurple: {
+                            50: '#faf5ff',
+                            100: '#f3e8ff',
+                            200: '#e9d5ff',
+                            300: '#d8b4fe',
+                            400: '#c084fc',
+                            500: '#a855f7',
+                            600: '#9333ea',
+                            700: '#7e22ce',
+                            800: '#581c87',
+                            900: '#3b0764',
+                            950: '#2e1065',
+                        },
+                        amberGold: {
+                            100: '#fef3c7',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                        },
+                        charcoalDark: '#13111a',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .purple-gradient-text {
+            background: linear-gradient(135deg, #c084fc 0%, #fbbf24 50%, #f3e8ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-purple-bg {
+            background: radial-gradient(circle at top right, #581c87 0%, #2e1065 60%, #13111a 100%);
+        }
+        .glass-purple-card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(192, 132, 252, 0.25);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-purple-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 22px 35px -12px rgba(126, 34, 206, 0.22);
+            border-color: #a855f7;
+        }
+        .glass-dark-card {
+            background: rgba(46, 16, 101, 0.65);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(216, 180, 254, 0.2);
+        }
+        #page-preloader {
+            transition: opacity 0.35s ease, visibility 0.35s ease;
+        }
+        .page-loaded #page-preloader {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .preloader-spinner {
+            animation: preloader-spin 0.8s linear infinite;
+        }
+        @keyframes preloader-spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-royalPurple-50 text-slate-800 font-sans antialiased selection:bg-royalPurple-200 selection:text-royalPurple-950">
+
+    <div id="page-preloader" class="fixed inset-0 z-[100] flex flex-col items-center justify-center gap-4 bg-royalPurple-950 text-white" role="status" aria-live="polite">
+        <div class="preloader-spinner h-12 w-12 rounded-full border-4 border-white/20 border-t-amberGold-400"></div>
+        <p class="font-serif text-lg">Loading CJ Plus Cosmetics</p>
+    </div>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-royalPurple-950 text-royalPurple-100 text-xs sm:text-sm py-2.5 px-4 text-center border-b border-royalPurple-700/40">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 px-2">
+            <span class="hidden md:inline-flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-amberGold-400"></i> Shop 3 Chukwudozie Plaza, UNIZIK Temp Site, Awka</span>
+            <span class="font-medium tracking-wide">✨ <strong class="text-amberGold-300">Transform Your Skin in 3 Weeks!</strong> Customized Cream Prescriptions & Make-Over</span>
+            <div class="flex items-center gap-4">
+                <a href="tel:08033590975" class="hover:text-amberGold-300 transition flex items-center gap-1"><i class="fa-solid fa-phone text-amberGold-400"></i> 08033590975</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-royalPurple-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-royalPurple-900 via-royalPurple-700 to-royalPurple-500 flex items-center justify-center text-amberGold-300 font-serif text-2xl font-bold shadow-md group-hover:rotate-3 transition-transform">
+                        CJ
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-serif text-xl sm:text-2xl tracking-wide font-bold text-royalPurple-950 leading-none">CJ PLUS</span>
+                        <span class="text-[10px] tracking-[0.22em] text-royalPurple-600 font-extrabold uppercase mt-1">Cosmetics & Make-Over</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center space-x-7 text-xs font-bold uppercase tracking-wider text-slate-700">
+                    <a href="#about" class="hover:text-royalPurple-600 transition">About Us</a>
+                    <a href="#services" class="hover:text-royalPurple-600 transition">Services</a>
+                    <a href="#products" class="hover:text-royalPurple-600 transition">Catalog</a>
+                    <a href="#ceo" class="hover:text-royalPurple-600 transition">CEO Profile</a>
+                    <a href="#booking" class="hover:text-royalPurple-600 transition">Book Consult</a>
+                    <a href="#reviews" class="hover:text-royalPurple-600 transition">Reviews</a>
+                    <a href="#faq" class="hover:text-royalPurple-600 transition">FAQs</a>
+                </nav>
+
+                <!-- Header Action Buttons -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/2348033590975?text=Hello%20CJ%20Plus%20Cosmetics,%20I%20want%20to%20inquire%20about%20a%20skin%20care%20prescription." target="_blank" class="flex items-center gap-2 text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 px-3.5 py-2.5 rounded-full transition">
+                        <i class="fa-brands fa-whatsapp text-emerald-600 text-base"></i>
+                        <span class="hidden xl:inline">WhatsApp</span>
+                    </a>
+                    <a href="#booking" class="bg-gradient-to-r from-royalPurple-800 via-royalPurple-700 to-royalPurple-600 hover:from-royalPurple-900 hover:to-royalPurple-700 text-white text-xs uppercase font-bold tracking-wider px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition">
+                        Book Appointment
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex lg:hidden">
+                    <button id="mobile-menu-btn" type="button" class="text-royalPurple-950 p-2 rounded-lg hover:bg-royalPurple-50 focus:outline-none" aria-label="Toggle Navigation">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-royalPurple-100 px-5 pt-3 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-sm font-semibold text-slate-800 hover:text-royalPurple-600 border-b border-slate-100">About Us</a>
+            <a href="#services" class="block py-2 text-sm font-semibold text-slate-800 hover:text-royalPurple-600 border-b border-slate-100">Specialized Services</a>
+            <a href="#products" class="block py-2 text-sm font-semibold text-slate-800 hover:text-royalPurple-600 border-b border-slate-100">Products Catalog</a>
+            <a href="#ceo" class="block py-2 text-sm font-semibold text-slate-800 hover:text-royalPurple-600 border-b border-slate-100">Meet CEO Iphie</a>
+            <a href="#booking" class="block py-2 text-sm font-semibold text-slate-800 hover:text-royalPurple-600 border-b border-slate-100">Book Consultation</a>
+            <a href="#reviews" class="block py-2 text-sm font-semibold text-slate-800 hover:text-royalPurple-600 border-b border-slate-100">Client Reviews</a>
+            <a href="#faq" class="block py-2 text-sm font-semibold text-slate-800 hover:text-royalPurple-600 border-b border-slate-100">FAQs</a>
+            <a href="#contact" class="block py-2 text-sm font-semibold text-slate-800 hover:text-royalPurple-600">Location & Hours</a>
+            <div class="pt-3 flex flex-col gap-2.5">
+                <a href="https://wa.me/2348033590975" target="_blank" class="w-full flex items-center justify-center gap-2 bg-emerald-600 text-white py-3 rounded-xl font-bold text-xs uppercase tracking-wider shadow">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp Chat
+                </a>
+                <a href="#booking" class="w-full text-center bg-royalPurple-800 text-white py-3 rounded-xl font-bold text-xs uppercase tracking-wider shadow">
+                    Book Session
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[88vh] flex items-center py-16 lg:py-24 overflow-hidden hero-purple-bg text-white">
+        <!-- Floating Ambient Lighting Elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-royalPurple-500/25 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-amberGold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-royalPurple-800/80 border border-royalPurple-400/40 text-royalPurple-200 text-xs font-bold tracking-widest uppercase shadow-inner">
+                        <i class="fa-solid fa-crown text-amberGold-400"></i> Awka's Premier Skincare & Make-Over Hub
+                    </div>
+                    
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.12]">
+                        Realise the Beauty in You — <br>
+                        <span class="purple-gradient-text italic font-normal">Transform Your Skin in 3 Weeks.</span>
+                    </h1>
+                    
+                    <p class="text-royalPurple-100/90 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        At <strong>CJ Plus Cosmetics & Make-Over</strong>, we treat skin problems, prescribe tailored creams for every skin type, and guarantee an even tone transformation. Visit us at UNIZIK Temporary Site, Awka.
+                    </p>
+
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#booking" class="w-full sm:w-auto bg-gradient-to-r from-amberGold-400 to-amberGold-500 hover:from-amberGold-500 hover:to-amberGold-400 text-royalPurple-950 font-extrabold px-8 py-4 rounded-full text-xs uppercase tracking-widest shadow-xl hover:shadow-amberGold-400/20 transition-all text-center">
+                            Book Skin Consultation
+                        </a>
+                        <a href="https://wa.me/2348033590975?text=Hello%20CJ%20Plus,%20I%20would%20like%20a%20skin%20prescription." target="_blank" class="w-full sm:w-auto border border-royalPurple-300/40 hover:border-amberGold-400 hover:text-amberGold-300 text-white px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg text-emerald-400"></i> Instant WhatsApp
+                        </a>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="pt-8 border-t border-royalPurple-700/50 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-center">
+                        <div class="p-2">
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-amberGold-300">3 Weeks</p>
+                            <p class="text-[11px] text-royalPurple-200 uppercase font-medium mt-0.5">Even Tone Result</p>
+                        </div>
+                        <div class="p-2 border-x border-royalPurple-700/50">
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-amberGold-300">Custom</p>
+                            <p class="text-[11px] text-royalPurple-200 uppercase font-medium mt-0.5">Cream Prescriptions</p>
+                        </div>
+                        <div class="p-2">
+                            <p class="font-serif text-2xl sm:text-3xl font-bold text-amberGold-300">100%</p>
+                            <p class="text-[11px] text-royalPurple-200 uppercase font-medium mt-0.5">Authentic Brands</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Card Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Main Image Container -->
+                        <div class="relative rounded-3xl overflow-hidden border-2 border-royalPurple-400/40 shadow-2xl bg-royalPurple-950 aspect-[4/5] group">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80" 
+                                 alt="CJ Plus Cosmetics Skincare Awka" 
+                                 class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition duration-700"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x750/3b0764/f3e8ff?text=CJ+Plus+Cosmetics';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-royalPurple-950 via-transparent to-transparent opacity-90"></div>
+                            <div class="absolute bottom-6 left-6 right-6 text-white space-y-2">
+                                <span class="bg-amberGold-400 text-royalPurple-950 text-[10px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-md inline-block">Skin Care & Make-Over</span>
+                                <p class="font-serif text-2xl font-semibold italic">"We treat skin problems & restore your glow."</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Feature Badge -->
+                        <div class="absolute -bottom-6 -left-6 bg-white text-royalPurple-950 p-4 rounded-2xl shadow-2xl border border-royalPurple-200 flex items-center gap-3.5 hidden sm:flex">
+                            <div class="w-12 h-12 rounded-xl bg-royalPurple-100 text-royalPurple-800 flex items-center justify-center text-xl font-bold">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-semibold uppercase">Speciality</p>
+                                <p class="text-sm font-extrabold">All Skin Type Prescriptions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-white border-b border-royalPurple-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-royalPurple-600 font-extrabold tracking-widest text-xs uppercase">A Giant in Skin Care & Make-Over</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-royalPurple-950">
+                        Welcome to CJ Plus Cosmetics & Make-Over
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Located at <strong>Shop No. 3 Chukwudozie Plaza, St. Joseph the Worker Road, UNIZIK Temporary Site, Awka</strong>, CJ Plus Cosmetics & Make-Over is a leading cosmetic establishment dedicated to providing complete beauty solutions.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        We are renowned for prescribing creams uniquely formulated for all skin types. Whether you are struggling with hyperpigmentation, acne scars, dull skin, or uneven skin tone, our expert formulations aim to show noticeable results in just <strong>3 weeks</strong>.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-2xl bg-royalPurple-50 border border-royalPurple-100 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-royalPurple-600 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-bold text-sm text-royalPurple-950">Cream Prescriptions</h4>
+                                <p class="text-xs text-slate-500 mt-1">Formulated specifically to match your skin condition.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-royalPurple-50 border border-royalPurple-100 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-royalPurple-600 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-bold text-sm text-royalPurple-950">Event Make-Over</h4>
+                                <p class="text-xs text-slate-500 mt-1">Professional makeup for weddings, birthdays & galas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=600&q=80" alt="Cosmetic Products Awka" class="rounded-3xl object-cover h-72 w-full shadow-md border-2 border-royalPurple-100" onerror="this.onerror=null; this.src='https://placehold.co/400x500/e9d5ff/3b0764?text=Skincare+Creams';">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Makeover Studio Awka" class="rounded-3xl object-cover h-72 w-full shadow-md border-2 border-royalPurple-100 mt-8" onerror="this.onerror=null; this.src='https://placehold.co/400x500/d8b4fe/3b0764?text=Make-Over+Artistry';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE SPECIALIZED SERVICES -->
+    <section id="services" class="py-20 bg-royalPurple-50/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-royalPurple-600 font-extrabold tracking-widest text-xs uppercase">What We Do Best</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-royalPurple-950 mt-2">Specialized Services & Beauty Treatments</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-royalPurple-600 to-amberGold-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="glass-purple-card p-7 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-royalPurple-100 text-royalPurple-800 flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-prescription-bottle-medical"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-royalPurple-950 mb-2">Skin Care & Cream Prescriptions</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                            Assessment of skin issues (acne, dark spots, sunburn) followed by tailored cream formulations to guarantee an even skin tone in 3 weeks.
+                        </p>
+                    </div>
+                    <a href="#booking" class="inline-flex items-center gap-2 text-royalPurple-700 text-xs font-bold uppercase tracking-wider hover:text-royalPurple-900 transition">
+                        Get Prescription <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-purple-card p-7 rounded-3xl flex flex-col justify-between border-royalPurple-400">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-amberGold-100 text-amberGold-600 flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-brush"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-royalPurple-950 mb-2">Professional Make-Over Services</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                            Stunning bridal glam, traditional wedding makeovers, birthday photoshoots, and special event transformations by seasoned makeup artists.
+                        </p>
+                    </div>
+                    <a href="#booking" class="inline-flex items-center gap-2 text-royalPurple-700 text-xs font-bold uppercase tracking-wider hover:text-royalPurple-900 transition">
+                        Book Makeover <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-purple-card p-7 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-royalPurple-100 text-royalPurple-800 flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-royalPurple-950 mb-2">Beauty & Makeup Training</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                            Hands-on masterclass sessions for prospective beauty professionals. Learn skin prescription secrets, color theory, and makeup techniques.
+                        </p>
+                    </div>
+                    <a href="#booking" class="inline-flex items-center gap-2 text-royalPurple-700 text-xs font-bold uppercase tracking-wider hover:text-royalPurple-900 transition">
+                        Enroll in Training <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-purple-card p-7 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-royalPurple-100 text-royalPurple-800 flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-royalPurple-950 mb-2">Cosmetics & Toiletries Wholesale</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                            Supply of authentic local and international cosmetics brands, body lotions, face serums, beauty tools, and toiletries.
+                        </p>
+                    </div>
+                    <a href="#products" class="inline-flex items-center gap-2 text-royalPurple-700 text-xs font-bold uppercase tracking-wider hover:text-royalPurple-900 transition">
+                        View Products <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTERABLE PRODUCTS & CATALOG SHOWCASE -->
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-royalPurple-600 font-extrabold tracking-widest text-xs uppercase">Store Catalog</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-royalPurple-950 mt-2">Explore Our Product Range</h2>
+                <p class="text-slate-600 text-sm mt-2">Authentic cosmetics, skincare treatments, toiletries, and makeover accessories.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
+                <button class="catalog-filter active bg-royalPurple-800 text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition" data-filter="all">All Items</button>
+                <button class="catalog-filter bg-royalPurple-100 text-royalPurple-900 hover:bg-royalPurple-200 px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition" data-filter="skincare">Skincare & Creams</button>
+                <button class="catalog-filter bg-royalPurple-100 text-royalPurple-900 hover:bg-royalPurple-200 px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition" data-filter="makeup">Makeup & Cosmetics</button>
+                <button class="catalog-filter bg-royalPurple-100 text-royalPurple-900 hover:bg-royalPurple-200 px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition" data-filter="toiletries">Toiletries & Care</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product Card 1 -->
+                <div class="product-item skincare border border-royalPurple-100 rounded-2xl p-4 bg-white hover:shadow-lg transition">
+                    <div class="h-48 rounded-xl bg-royalPurple-50 overflow-hidden mb-3 relative">
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=80" alt="Even Tone Cream" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/400x400/e9d5ff/3b0764?text=Prescription+Cream';">
+                        <span class="absolute top-2 left-2 bg-royalPurple-800 text-white text-[10px] font-bold uppercase px-2.5 py-1 rounded-md">Prescription</span>
+                    </div>
+                    <span class="text-[10px] uppercase font-bold text-royalPurple-600 tracking-wider">3-Week Formula</span>
+                    <h4 class="font-serif font-bold text-royalPurple-950 text-base mt-0.5">Even Tone Prescription Cream</h4>
+                    <p class="text-xs text-slate-500 mt-1">Formulated for dark spots & uneven complexion.</p>
+                    <a href="https://wa.me/2348033590975?text=Hello%20CJ%20Plus,%20I%20am%20interested%20in%20the%20Even%20Tone%20Prescription%20Cream." target="_blank" class="mt-4 w-full bg-royalPurple-50 hover:bg-royalPurple-800 hover:text-white text-royalPurple-900 text-xs font-bold py-2.5 rounded-xl border border-royalPurple-200 text-center block transition">
+                        Order via WhatsApp
+                    </a>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-item makeup border border-royalPurple-100 rounded-2xl p-4 bg-white hover:shadow-lg transition">
+                    <div class="h-48 rounded-xl bg-royalPurple-50 overflow-hidden mb-3 relative">
+                        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=500&q=80" alt="Pro Matte Foundation" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/400x400/e9d5ff/3b0764?text=Makeup+Foundation';">
+                    </div>
+                    <span class="text-[10px] uppercase font-bold text-royalPurple-600 tracking-wider">Cosmetics</span>
+                    <h4 class="font-serif font-bold text-royalPurple-950 text-base mt-0.5">Pro HD Matte Foundation</h4>
+                    <p class="text-xs text-slate-500 mt-1">Long-wearing full coverage for all shade types.</p>
+                    <a href="https://wa.me/2348033590975?text=Hello%20CJ%20Plus,%20I%20want%20to%20buy%20Pro%20HD%20Foundation." target="_blank" class="mt-4 w-full bg-royalPurple-50 hover:bg-royalPurple-800 hover:text-white text-royalPurple-900 text-xs font-bold py-2.5 rounded-xl border border-royalPurple-200 text-center block transition">
+                        Order via WhatsApp
+                    </a>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-item skincare border border-royalPurple-100 rounded-2xl p-4 bg-white hover:shadow-lg transition">
+                    <div class="h-48 rounded-xl bg-royalPurple-50 overflow-hidden mb-3 relative">
+                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80" alt="Acne Treatment Solution" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/400x400/e9d5ff/3b0764?text=Acne+Clear';">
+                    </div>
+                    <span class="text-[10px] uppercase font-bold text-royalPurple-600 tracking-wider">Treatment</span>
+                    <h4 class="font-serif font-bold text-royalPurple-950 text-base mt-0.5">Acne & Sunburn Clarifying Lotion</h4>
+                    <p class="text-xs text-slate-500 mt-1">Clears hyperpigmentation and severe acne spots.</p>
+                    <a href="https://wa.me/2348033590975?text=Hello%20CJ%20Plus,%20I%20need%20the%20Acne%20and%20Sunburn%20Lotion." target="_blank" class="mt-4 w-full bg-royalPurple-50 hover:bg-royalPurple-800 hover:text-white text-royalPurple-900 text-xs font-bold py-2.5 rounded-xl border border-royalPurple-200 text-center block transition">
+                        Order via WhatsApp
+                    </a>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-item toiletries border border-royalPurple-100 rounded-2xl p-4 bg-white hover:shadow-lg transition">
+                    <div class="h-48 rounded-xl bg-royalPurple-50 overflow-hidden mb-3 relative">
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=80" alt="Hydrating Shower Gel" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/400x400/e9d5ff/3b0764?text=Toiletries';">
+                    </div>
+                    <span class="text-[10px] uppercase font-bold text-royalPurple-600 tracking-wider">Toiletries</span>
+                    <h4 class="font-serif font-bold text-royalPurple-950 text-base mt-0.5">Luxurious Hydrating Body Wash</h4>
+                    <p class="text-xs text-slate-500 mt-1">Gently cleanses while maintaining moisture barrier.</p>
+                    <a href="https://wa.me/2348033590975?text=Hello%20CJ%20Plus,%20I%20want%20to%20buy%20Body%20Wash%20toiletries." target="_blank" class="mt-4 w-full bg-royalPurple-50 hover:bg-royalPurple-800 hover:text-white text-royalPurple-900 text-xs font-bold py-2.5 rounded-xl border border-royalPurple-200 text-center block transition">
+                        Order via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEET CEO IPHIE PROFILE SECTION -->
+    <section id="ceo" class="py-20 bg-gradient-to-b from-royalPurple-950 via-royalPurple-900 to-royalPurple-950 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- CEO Image -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-sm lg:max-w-none">
+                        <div class="rounded-3xl overflow-hidden border-2 border-amberGold-400/50 p-2.5 bg-royalPurple-950 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" 
+                                 alt="CEO Iphie - CJ Plus Cosmetics" 
+                                 class="w-full h-auto rounded-2xl object-cover filter brightness-95"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/500x600/2e1065/f3e8ff?text=CEO+Iphie';">
+                        </div>
+                        <div class="absolute -bottom-5 right-2 bg-gradient-to-r from-amberGold-400 to-amberGold-500 text-royalPurple-950 p-4 rounded-2xl shadow-xl">
+                            <p class="font-serif text-lg font-extrabold">CEO Iphie</p>
+                            <p class="text-[10px] uppercase tracking-widest font-bold">Founder & Chief Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CEO Details -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-royalPurple-800 border border-royalPurple-600 text-amberGold-300 text-xs font-bold uppercase tracking-widest">
+                        <i class="fa-solid fa-crown text-amberGold-400"></i> Visionary Leadership
+                    </div>
+
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold leading-tight">
+                        Meet CEO Iphie <br>
+                        <span class="text-royalPurple-300 italic font-normal text-2xl sm:text-4xl">Awka's Foremost Beauty & Skin Specialist</span>
+                    </h2>
+
+                    <p class="text-royalPurple-100/90 text-sm sm:text-base leading-relaxed font-light">
+                        CEO Iphie is the mastermind behind <strong>CJ Plus Cosmetics & Make-Over</strong>. With a profound commitment to healthy skincare, she has positioned CJ Plus as Awka’s go-to store for custom cream prescriptions and high-fashion makeovers.
+                    </p>
+
+                    <blockquote class="border-l-4 border-amberGold-400 pl-4 py-2 text-amberGold-100 font-serif italic text-lg sm:text-xl">
+                        "Visit CJ Plus today to realise the beauty in you. We ensure you leave with a radiant, even skin tone within 3 weeks!"
+                    </blockquote>
+
+                    <!-- Credentials Badges -->
+                    <div class="pt-2 flex flex-wrap gap-2.5">
+                        <span class="px-3.5 py-1.5 rounded-lg bg-royalPurple-800/80 border border-royalPurple-600 text-xs text-royalPurple-200">
+                            ✨ Skincare Prescription Specialist
+                        </span>
+                        <span class="px-3.5 py-1.5 rounded-lg bg-royalPurple-800/80 border border-royalPurple-600 text-xs text-royalPurple-200">
+                            ✨ Professional Bridal Artist
+                        </span>
+                        <span class="px-3.5 py-1.5 rounded-lg bg-royalPurple-800/80 border border-royalPurple-600 text-xs text-royalPurple-200">
+                            ✨ Masterclass Beauty Instructor
+                        </span>
+                    </div>
+
+                    <div class="pt-3">
+                        <a href="https://instagram.com/cjplusiphie" target="_blank" class="inline-flex items-center gap-2 bg-royalPurple-800 hover:bg-royalPurple-700 text-amberGold-300 px-5 py-2.5 rounded-full border border-royalPurple-600 text-xs font-bold transition">
+                            <i class="fa-brands fa-instagram text-lg"></i> Follow CEO Iphie (@cjplusiphie)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE BOOKING & CONSULTATION SECTION -->
+    <section id="booking" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-royalPurple-600 font-extrabold tracking-widest text-xs uppercase">Get Started</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-royalPurple-950 mt-2">Book Your Skin Session or Make-Over</h2>
+                <p class="text-slate-600 text-sm mt-2">Fill out the quick form below to schedule your appointment at Chukwudozie Plaza or request a direct cream prescription.</p>
+            </div>
+
+            <div class="bg-royalPurple-50/70 rounded-3xl p-6 sm:p-10 border border-royalPurple-200 shadow-xl">
+                <form id="bookingForm" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Full Name -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-royalPurple-950 mb-2">Full Name *</label>
+                            <input type="text" id="clientName" required placeholder="e.g. Nneka Eze" class="w-full px-4 py-3 rounded-xl border border-royalPurple-200 bg-white text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-royalPurple-600 transition">
+                        </div>
+
+                        <!-- Phone / WhatsApp -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-royalPurple-950 mb-2">Phone / WhatsApp Number *</label>
+                            <input type="tel" id="clientPhone" required placeholder="e.g. 08033590975" class="w-full px-4 py-3 rounded-xl border border-royalPurple-200 bg-white text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-royalPurple-600 transition">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Service Needed -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-royalPurple-950 mb-2">Select Service *</label>
+                            <select id="serviceType" required class="w-full px-4 py-3 rounded-xl border border-royalPurple-200 bg-white text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-royalPurple-600 transition">
+                                <option value="">-- Choose a Service --</option>
+                                <option value="3-Week Skin Cream Prescription">3-Week Skin Cream Prescription (Hyperpigmentation/Acne)</option>
+                                <option value="Event Make-Over / Makeup">Event / Bridal Make-Over Session</option>
+                                <option value="Professional Beauty Training">Beauty Professional Masterclass Training</option>
+                                <option value="General Cosmetics & Toiletries Purchase">General Cosmetics / Wholesale Inquiry</option>
+                            </select>
+                        </div>
+
+                        <!-- Date -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-royalPurple-950 mb-2">Preferred Appointment Date *</label>
+                            <input type="date" id="bookingDate" required class="w-full px-4 py-3 rounded-xl border border-royalPurple-200 bg-white text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-royalPurple-600 transition">
+                        </div>
+                    </div>
+
+                    <!-- Skin Problem / Details -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-royalPurple-950 mb-2">Describe Your Skin Issues or Makeover Details</label>
+                        <textarea id="clientNotes" rows="3" placeholder="Tell us about your skin type (oily/dry), acne, sunburns, or makeup preferences..." class="w-full px-4 py-3 rounded-xl border border-royalPurple-200 bg-white text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-royalPurple-600 transition"></textarea>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <button type="submit" class="flex-1 bg-royalPurple-900 hover:bg-royalPurple-800 text-white font-bold text-xs uppercase tracking-widest py-4 rounded-xl shadow-md transition">
+                            Submit Appointment Form
+                        </button>
+                        <button type="button" id="whatsappDirectBtn" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-widest py-4 rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp Booking
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS & USER TESTIMONIALS SECTION -->
+    <section id="reviews" class="py-20 bg-royalPurple-50/50 border-t border-royalPurple-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-royalPurple-600 font-extrabold tracking-widest text-xs uppercase">Client Feedback</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-royalPurple-950 mt-2">What Our Clients Say</h2>
+                <div class="flex items-center justify-center gap-1 text-amberGold-400 text-lg mt-3">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <span class="text-xs font-bold text-slate-700 ml-2">5.0 / 5.0 Rating</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16" id="reviewsContainer">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-royalPurple-100 shadow-sm space-y-3">
+                    <div class="flex text-amberGold-400 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-xs leading-relaxed font-light italic">"CJ Plus prescribed a cream for my severe sunburn and acne scars. Within 3 weeks my face completely cleared up and my tone is so even now!"</p>
+                    <div class="pt-2 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-royalPurple-200 text-royalPurple-900 font-bold text-xs flex items-center justify-center">CO</div>
+                        <div>
+                            <p class="text-xs font-bold text-royalPurple-950">Chizoba O.</p>
+                            <p class="text-[10px] text-slate-400">Awka, Anambra</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-royalPurple-100 shadow-sm space-y-3">
+                    <div class="flex text-amberGold-400 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-xs leading-relaxed font-light italic">"Their wedding makeover service is top-notch! CEO Iphie did my bridal glam and I got endless compliments. Best beauty store in Awka."</p>
+                    <div class="pt-2 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-royalPurple-200 text-royalPurple-900 font-bold text-xs flex items-center justify-center">KA</div>
+                        <div>
+                            <p class="text-xs font-bold text-royalPurple-950">Kenechukwu A.</p>
+                            <p class="text-[10px] text-slate-400">UNIZIK Temp Site</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-royalPurple-100 shadow-sm space-y-3">
+                    <div class="flex text-amberGold-400 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-xs leading-relaxed font-light italic">"Authentic products and friendly staff. They really know how to recommend the right lotions for sensitive skin types."</p>
+                    <div class="pt-2 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-royalPurple-200 text-royalPurple-900 font-bold text-xs flex items-center justify-center">UN</div>
+                        <div>
+                            <p class="text-xs font-bold text-royalPurple-950">Uche N.</p>
+                            <p class="text-[10px] text-slate-400">Awka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leave a Review Form -->
+            <div class="max-w-2xl mx-auto bg-white p-6 sm:p-8 rounded-3xl border border-royalPurple-200 shadow-sm">
+                <h3 class="font-serif text-xl font-bold text-royalPurple-950 text-center mb-4">Leave Your Review</h3>
+                <form id="reviewForm" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <input type="text" id="reviewerName" required placeholder="Your Name" class="px-4 py-2.5 rounded-xl border border-royalPurple-200 text-xs focus:outline-none focus:ring-2 focus:ring-royalPurple-600">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-bold text-slate-600">Rating:</span>
+                            <div class="flex text-amberGold-400 text-sm gap-1 cursor-pointer" id="starRatingSelector">
+                                <i class="fa-solid fa-star cursor-pointer" data-val="1"></i>
+                                <i class="fa-solid fa-star cursor-pointer" data-val="2"></i>
+                                <i class="fa-solid fa-star cursor-pointer" data-val="3"></i>
+                                <i class="fa-solid fa-star cursor-pointer" data-val="4"></i>
+                                <i class="fa-solid fa-star cursor-pointer" data-val="5"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea id="reviewerComment" required rows="3" placeholder="Share your experience with CJ Plus Cosmetics..." class="w-full px-4 py-2.5 rounded-xl border border-royalPurple-200 text-xs focus:outline-none focus:ring-2 focus:ring-royalPurple-600"></textarea>
+                    <button type="submit" class="w-full bg-royalPurple-800 hover:bg-royalPurple-900 text-white font-bold text-xs uppercase tracking-widest py-3 rounded-xl transition">
+                        Post Your Review
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-royalPurple-600 font-extrabold tracking-widest text-xs uppercase">Got Questions?</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-royalPurple-950 mt-2">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border border-royalPurple-100 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full p-5 text-left font-serif font-bold text-royalPurple-950 flex justify-between items-center bg-royalPurple-50/50 hover:bg-royalPurple-100/50 transition">
+                        <span>How does the 3-week skin transformation prescription work?</span>
+                        <i class="fa-solid fa-chevron-down text-royalPurple-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-5 text-xs text-slate-600 leading-relaxed border-t border-royalPurple-100 bg-white">
+                        When you visit CJ Plus Cosmetics, our specialist evaluates your skin type and specific concerns (hyperpigmentation, acne, dark spots, sunburn). We then prescribe a customized cream regimen. Following our application guide strictly yields clear, even-toned skin within 3 weeks.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border border-royalPurple-100 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full p-5 text-left font-serif font-bold text-royalPurple-950 flex justify-between items-center bg-royalPurple-50/50 hover:bg-royalPurple-100/50 transition">
+                        <span>Where is CJ Plus Cosmetics located in Awka?</span>
+                        <i class="fa-solid fa-chevron-down text-royalPurple-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-5 text-xs text-slate-600 leading-relaxed border-t border-royalPurple-100 bg-white">
+                        We are located at <strong>Shop No. 3 Chukwudozie Plaza, St. Joseph the Worker Road, UNIZIK Temporary Site, Awka, Anambra State</strong>.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border border-royalPurple-100 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full p-5 text-left font-serif font-bold text-royalPurple-950 flex justify-between items-center bg-royalPurple-50/50 hover:bg-royalPurple-100/50 transition">
+                        <span>What payment methods do you accept at the store?</span>
+                        <i class="fa-solid fa-chevron-down text-royalPurple-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-5 text-xs text-slate-600 leading-relaxed border-t border-royalPurple-100 bg-white">
+                        We accept <strong>Cash</strong>, <strong>Bank Transfers</strong>, and card/POS payments for your convenience.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="border border-royalPurple-100 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full p-5 text-left font-serif font-bold text-royalPurple-950 flex justify-between items-center bg-royalPurple-50/50 hover:bg-royalPurple-100/50 transition">
+                        <span>Do I need an appointment for makeup and skin consultations?</span>
+                        <i class="fa-solid fa-chevron-down text-royalPurple-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden p-5 text-xs text-slate-600 leading-relaxed border-t border-royalPurple-100 bg-white">
+                        Walk-ins are welcome Monday to Saturday between 8:00 AM and 7:00 PM. However, booking an appointment online or via WhatsApp ensures instant attention for bridal makeup and skin consultations.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & STORE INFORMATION -->
+    <section id="contact" class="py-20 bg-royalPurple-950 text-white border-t border-royalPurple-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-amberGold-400 font-extrabold tracking-widest text-xs uppercase">Find Us Easily</span>
+                        <h2 class="font-serif text-3xl font-bold mt-1">Visit CJ Plus Cosmetics</h2>
+                        <p class="text-royalPurple-200 text-xs mt-2">Walk in or order directly to your doorstep in Awka.</p>
+                    </div>
+
+                    <div class="space-y-5">
+                        <!-- Address -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-royalPurple-800 text-amberGold-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-[10px] uppercase font-bold text-royalPurple-300 tracking-wider">Store Address</h4>
+                                <p class="text-xs font-medium text-white mt-0.5">
+                                    Shop No. 3 Chukwudozie Plaza,<br>
+                                    St. Joseph the Worker Road,<br>
+                                    UNIZIK Temporary Site, Awka, Anambra State.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-royalPurple-800 text-amberGold-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-[10px] uppercase font-bold text-royalPurple-300 tracking-wider">Phone / WhatsApp</h4>
+                                <p class="text-xs font-bold text-white mt-0.5">
+                                    <a href="tel:08033590975" class="hover:text-amberGold-300">08033590975</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-royalPurple-800 text-amberGold-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-[10px] uppercase font-bold text-royalPurple-300 tracking-wider">Operating Hours</h4>
+                                <p class="text-xs text-white mt-0.5">
+                                    Mon – Sat: 8:00 AM – 7:00 PM (19:00)<br>
+                                    <span class="text-royalPurple-300 text-[11px]">Sunday: Closed / Appointments Only</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Payment Methods Accepted -->
+                        <div class="pt-2">
+                            <h4 class="text-[10px] uppercase font-bold text-royalPurple-300 tracking-wider mb-2">Accepted Payment Methods</h4>
+                            <div class="flex items-center gap-2">
+                                <span class="px-3 py-1 bg-royalPurple-800 border border-royalPurple-700 rounded-lg text-[10px] text-amberGold-300 font-bold"><i class="fa-solid fa-money-bill-wave mr-1"></i> Cash</span>
+                                <span class="px-3 py-1 bg-royalPurple-800 border border-royalPurple-700 rounded-lg text-[10px] text-amberGold-300 font-bold"><i class="fa-solid fa-building-columns mr-1"></i> Bank Transfer</span>
+                                <span class="px-3 py-1 bg-royalPurple-800 border border-royalPurple-700 rounded-lg text-[10px] text-amberGold-300 font-bold"><i class="fa-solid fa-credit-card mr-1"></i> POS / Card</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Card Placeholder -->
+                <div class="lg:col-span-7 bg-royalPurple-900/60 p-6 rounded-3xl border border-royalPurple-800 flex flex-col justify-between">
+                    <div class="w-full h-80 rounded-2xl bg-royalPurple-800/80 flex flex-col items-center justify-center p-6 text-center relative overflow-hidden">
+                        <div class="w-16 h-16 rounded-full bg-amberGold-400 text-royalPurple-950 flex items-center justify-center text-3xl shadow-xl mb-3">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-white">CJ Plus Store Location</h3>
+                        <p class="text-xs text-royalPurple-200 mt-1 max-w-sm">Shop 3 Chukwudozie Plaza, St. Joseph the Worker Rd, UNIZIK Temp Site, Awka</p>
+                        <a href="https://maps.google.com/?q=UNIZIK+Temporary+Site+Awka" target="_blank" class="mt-5 bg-gradient-to-r from-amberGold-400 to-amberGold-500 text-royalPurple-950 text-xs font-bold px-6 py-3 rounded-full hover:shadow-lg transition">
+                            <i class="fa-solid fa-diamond-turn-right mr-1.5"></i> Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FOOTER -->
+    <footer class="bg-charcoalDark text-white py-10 border-t border-royalPurple-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-royalPurple-900/50">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-royalPurple-800 flex items-center justify-center text-amberGold-300 font-serif font-bold">CJ</div>
+                    <span class="font-serif text-lg font-bold">CJ PLUS COSMETICS & MAKE-OVER</span>
+                </div>
+                <div class="flex space-x-6 text-xs text-slate-400">
+                    <a href="#about" class="hover:text-amberGold-300">About</a>
+                    <a href="#services" class="hover:text-amberGold-300">Services</a>
+                    <a href="#products" class="hover:text-amberGold-300">Catalog</a>
+                    <a href="#ceo" class="hover:text-amberGold-300">CEO Profile</a>
+                    <a href="#booking" class="hover:text-amberGold-300">Booking</a>
+                </div>
+            </div>
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>&copy; <span id="year"></span> CJ Plus Cosmetics & Make-Over. Awka, Anambra State.</p>
+                <div class="flex gap-4 text-base">
+                    <a href="https://facebook.com" target="_blank" class="hover:text-amberGold-300"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/cjplusiphie" target="_blank" class="hover:text-amberGold-300"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/2348033590975" target="_blank" class="hover:text-amberGold-300"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/2348033590975?text=Hello%20CJ%20Plus,%20I%20want%20to%20make%20an%20inquiry." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 z-50 bg-emerald-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl hover:bg-emerald-600 hover:scale-110 transition duration-300 border-2 border-white"
+       aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- BOOKING CONFIRMATION MODAL -->
+    <div id="confirmationModal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-8 text-center relative shadow-2xl border border-royalPurple-200">
+            <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-3xl mx-auto mb-4">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-royalPurple-950 mb-2">Booking Recorded!</h3>
+            <p class="text-slate-600 text-xs mb-6">
+                Your appointment details are ready. Click below to instantly send this directly to CJ Plus Cosmetics on WhatsApp for quick confirmation!
+            </p>
+            <div class="flex flex-col gap-3">
+                <button id="modalWhatsAppBtn" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-widest py-3.5 rounded-xl transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Send to WhatsApp Now
+                </button>
+                <button id="closeModalBtn" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs uppercase tracking-widest py-3 rounded-xl transition">
+                    Close Window
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        const pagePreloader = document.getElementById('page-preloader');
+        let preloaderDismissed = false;
+
+        function dismissPreloader() {
+            if (preloaderDismissed) return;
+            preloaderDismissed = true;
+            document.body.classList.add('page-loaded');
+            pagePreloader.setAttribute('aria-hidden', 'true');
+        }
+
+        window.addEventListener('load', dismissPreloader, { once: true });
+        window.setTimeout(dismissPreloader, 10000);
+
+        // Set dynamic copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggler
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Catalog Filter Tabs
+        const filterBtns = document.querySelectorAll('.catalog-filter');
+        const productItems = document.querySelectorAll('.product-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-royalPurple-800', 'text-white');
+                    b.classList.add('bg-royalPurple-100', 'text-royalPurple-900');
+                });
+                btn.classList.remove('bg-royalPurple-100', 'text-royalPurple-900');
+                btn.classList.add('bg-royalPurple-800', 'text-white');
+
+                const filter = btn.getAttribute('data-filter');
+                productItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // FAQ Accordion Toggle
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Interactive Review Star Selector
+        let selectedRating = 5;
+        const stars = document.querySelectorAll('#starRatingSelector i');
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                selectedRating = parseInt(star.getAttribute('data-val'));
+                stars.forEach((s, idx) => {
+                    if (idx < selectedRating) {
+                        s.classList.add('text-amberGold-400');
+                        s.classList.remove('text-slate-300');
+                    } else {
+                        s.classList.remove('text-amberGold-400');
+                        s.classList.add('text-slate-300');
+                    }
+                });
+            });
+        });
+
+        // Add Review
+        document.getElementById('reviewForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('reviewerName').value;
+            const comment = document.getElementById('reviewerComment').value;
+
+            const reviewsContainer = document.getElementById('reviewsContainer');
+            const newReview = document.createElement('div');
+            newReview.className = "bg-white p-6 rounded-2xl border border-royalPurple-100 shadow-sm space-y-3";
+            newReview.innerHTML = `
+                <div class="flex text-amberGold-400 text-xs">
+                    ${'<i class="fa-solid fa-star"></i>'.repeat(selectedRating)}
+                </div>
+                <p class="text-slate-600 text-xs leading-relaxed font-light italic">"${comment}"</p>
+                <div class="pt-2 flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-royalPurple-200 text-royalPurple-900 font-bold text-xs flex items-center justify-center">${name.substring(0, 2).toUpperCase()}</div>
+                    <div>
+                        <p class="text-xs font-bold text-royalPurple-950">${name}</p>
+                        <p class="text-[10px] text-slate-400">Verified Client</p>
+                    </div>
+                </div>
+            `;
+            reviewsContainer.prepend(newReview);
+            document.getElementById('reviewForm').reset();
+            alert('Thank you! Your review has been published.');
+        });
+
+        // Booking Logic & Modal
+        const bookingForm = document.getElementById('bookingForm');
+        const confirmationModal = document.getElementById('confirmationModal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const modalWhatsAppBtn = document.getElementById('modalWhatsAppBtn');
+        const whatsappDirectBtn = document.getElementById('whatsappDirectBtn');
+
+        let formattedWhatsAppUrl = '';
+
+        function buildWhatsAppUrl() {
+            const name = document.getElementById('clientName').value || 'Valued Customer';
+            const phone = document.getElementById('clientPhone').value || 'N/A';
+            const service = document.getElementById('serviceType').value || 'General Consultation';
+            const date = document.getElementById('bookingDate').value || 'Not specified';
+            const notes = document.getElementById('clientNotes').value || 'None';
+
+            const text = `Hello CJ Plus Cosmetics & Make-Over!%0A%0AI would like to book an appointment.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Service:* ${encodeURIComponent(service)}%0A*Date:* ${encodeURIComponent(date)}%0A*Notes/Skin Details:* ${encodeURIComponent(notes)}`;
+            return `https://wa.me/2348033590975?text=${text}`;
+        }
+
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            formattedWhatsAppUrl = buildWhatsAppUrl();
+            confirmationModal.classList.remove('hidden');
+        });
+
+        whatsappDirectBtn.addEventListener('click', () => {
+            window.open(buildWhatsAppUrl(), '_blank');
+        });
+
+        modalWhatsAppBtn.addEventListener('click', () => {
+            if (formattedWhatsAppUrl) {
+                window.open(formattedWhatsAppUrl, '_blank');
+            } else {
+                window.open('https://wa.me/2348033590975', '_blank');
+            }
+            confirmationModal.classList.add('hidden');
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            confirmationModal.classList.add('hidden');
+            bookingForm.reset();
+        });
+    </script>
+</body>
+</html>
